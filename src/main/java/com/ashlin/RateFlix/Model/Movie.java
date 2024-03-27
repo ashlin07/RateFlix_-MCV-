@@ -15,6 +15,7 @@ public class Movie {
     private String genre;
     private String director;
     private double averageRating;
+    private int no_of_reviews;
 
 // Constructors, getters, and setters
 
@@ -45,6 +46,10 @@ public class Movie {
         return averageRating;
     }
 
+    public int getNo_of_reviews() {
+        return no_of_reviews;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -67,5 +72,9 @@ public class Movie {
 
     public void setAverageRating(double averageRating) {
         this.averageRating = averageRating;
+    }
+
+    public void setNo_of_reviews(int no_of_reviews) {
+        this.no_of_reviews = no_of_reviews;
     }
 }
