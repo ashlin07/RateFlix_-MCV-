@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/movie")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:3000")
 public class MovieController {
     @Autowired
     private MovieService MovieService;
@@ -28,6 +28,8 @@ public class MovieController {
 
     }
     @PostMapping("/updateRating")
+
+
     public ResponseEntity<String> updateRating(@RequestBody RatingRequest ratingRequest) {
         try {
             System.out.println("Received movie ID: " + ratingRequest.getMovieId());
