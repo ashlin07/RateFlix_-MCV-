@@ -4,7 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
 @Entity
 public class Movie {
     @Id
@@ -78,3 +77,4 @@ public class Movie {
         this.no_of_reviews = no_of_reviews;
     }
 }
+
